@@ -1,17 +1,27 @@
-class Modal {
-    constructor () {
-        var vid;
-        axios.get('http://demo6669321.mockable.io/videos')
-            .then(function (response) {
-                console.log(response.data.videos[0].id);
-                console.log(response.data.videos[0].title);
-                vid = response.data.videos;
-            })
-            .catch(function (error) {
-                console.log((error))
-            });
-        console.log(vid[0]);
+var vid = new Array();
+function pinvideos() {
+    axios.get('http://demo6669321.mockable.io/videos')
+        .then(function (response) {
+            inserir(response.data.videos);
+        })
+        .catch(function (error) {
+            console.log((error))
+        });
+}
+pinvideos();
+function inserir(valor) {
+    var i = 0;
+    while (i < valor.length){
+        this.vid.push(valor[i]);
+        i++;
+    }
+    console.log(this.vid[1]);
+    console.log(this.vid.length);
+}
 
+class Modal {
+
+    constructor () {
         this.modalContainer = document.createElement('div');
         this.modalContainer.className = 'modal';
         document.body.appendChild(this.modalContainer);
@@ -27,7 +37,8 @@ class Modal {
         closeButton.addEventListener('click', this.close.bind(this));
         this.content = document.createElement('iframe');
         contentContainer.appendChild(this.content);
-        this.content.setAttribute("src","https://www.youtube.com/embed/".concat(videos[0].id));
+        this.content.setAttribute("src","https://www.youtube.com/embed/");
+        this.content.setAttribute("src","https://www.youtube.com/embed/");
         this.content.setAttribute("height","315");
         this.content.setAttribute("width","560");
         this.content.setAttribute("frameborder","0");
@@ -52,3 +63,8 @@ document.getElementById('btmmodal').addEventListener('click', () => {
 
     m.open();
 });
+//paginação
+function listItems(items, pageActual, limitItems){
+    let result = [];
+    return result;
+};

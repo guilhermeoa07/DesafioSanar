@@ -82,8 +82,8 @@ img{
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-            '1 2 3'
-            '4 5 6';
+            'a b c'
+            'd e f';
     margin: 5px auto;
     justify-content: center;
     padding: 2% 5%;
