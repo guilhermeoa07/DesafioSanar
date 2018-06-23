@@ -4,17 +4,63 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"  href="css/main.css">
     <title>Guilherme Oliveira</title>
 </head>
 <body>
-    <header class=" topo">
-        <h1><a href="#"><span>Sanar Flix</span></a></h1>
-        <input type="search">
-        <button>Adcionar Novo Video</button>
+<section id="main">
+    <header class="mainHeader">
+        <h1><a href="#">Sanar<span style="font-weight: 700">Flix</span></a></h1>
+        <div class="box">
+            <input type="text" name="search" placeholder="Pesquisar..." />
+            <button type="submit" class="button">Adcionar Novo Video</button>
+        </div>
     </header>
-    <section class = "videos">
-        <p class="M_topo">Últimos Videos</p>
-        <p class="M_filtro">Ordenar por:</p>
+    <nav class = "mainNav">
+            <h2 class="busca">Últimos Videos</h2>
+            <h3 class="busca">Ordenar por:</h3>
+    </nav>
+    <section id="videos">
+
+        <div class="container-box">
+                <div class="1 botao">
+                    <a href="#" alt=”DevMedia” id="btmmodal">
+                        <img src="https://i.ytimg.com/vi/LbHPJ3EQnnI/hqdefault.jpg" alt=”Imagem”>
+                        <figcaption>Figura 1. Imagem</figcaption>
+                    </a>
+                </div>
+                <div class="2 botao">
+                    <a href="#" alt=”DevMedia” id="btmmodal">
+                        <img src="https://i.ytimg.com/vi/LbHPJ3EQnnI/hqdefault.jpg" alt=”Imagem”>
+                    <figcaption>Figura 1. Imagem</figcaption>
+                </a>
+            </div>
+                <div class="3">
+                    <a href="#abrir" alt=”DevMedia”>
+                        <img src="https://i.ytimg.com/vi/LbHPJ3EQnnI/hqdefault.jpg" alt=”Imagem”>
+                        <figcaption>Figura 1. Imagem</figcaption>
+                    </a>
+                </div>
+                <div class="4">
+                    <a href="#abrir" alt=”DevMedia”>
+                        <img src="https://i.ytimg.com/vi/LbHPJ3EQnnI/hqdefault.jpg" alt=”Imagem”>
+                        <figcaption>Figura 1. Imagem</figcaption>
+                    </a>
+                </div>
+            </div>
+            <div class="paginacao">
+                <a href="#"><<</a>
+                <a href="#">1</a>
+                <a>-</a>
+                <a href="#">2</a>
+                <a href="#">>></a>
+            </div>
     </section>
+    <footer class="mainFooter">
+        <a>Footer</a>
+    </footer>
+</section>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="JS/main.js"></script>
 </body>
 </html>

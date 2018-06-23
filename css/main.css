@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Denifições de Grid */
+#main{
+    display: grid;
+    grid-template-areas: "header header" "nav nav" "section section" "footer footer";
+}
+.mainHeader{
+    grid-area: header;
+    background-color: darkcyan;
+    height: 26vh;
+}
+.mainNav{
+    grid-area: nav;
+    background-color: #ffffff;
+    width: auto;
+}
+
+.mainSection{
+    grid-area: section;
+    background-color: chartreuse;
+}
+.mainFooter{
+    grid-area: footer;
+    background-color: brown;
+}
+/*
+    Modal styles
+*/
+
+.modal.open {
+    display: flex;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    padding: 10vh 0;
+}
+
+.modal .container {
+    background-color: white;
+    border-radius: 0.25rem;
+    width: 80vw;
+    height: 70vh;
+    padding: 2rem;
+    position: relative;
+}
+
+.modal .close-button {
+    font-size: 150%;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.5rem;
+}
+
+/*grid dos videos */
+
+img{
+    width:25vw;
+    height:25vh;
+    border-radius: 5px;
+}
+
+.container-box {
+    width: 100%;
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+            '1 2 3'
+            '4 5 6';
+    margin: 5px auto;
+    justify-content: center;
+    padding: 2% 5%;
+    border-radius: 5px;
+}
+.botao{
+
+}
+
+.1 {
+    grid-area: 1;
+}
+
+.1 button{
+    background-image:url(https://i.ytimg.com/vi/LbHPJ3EQnnI/hqdefault.jpg);
+    width: 300px;
+    height: 100%;
+   }
+
+.2 {
+    grid-area: 2;
+}
+
+.3 {
+    grid-area: 3;
+}
+
+.4 {
+    grid-area: 4;
+}
+
+.5 {
+    grid-area: 5;
+}
+
+.6 {
+    grid-area: 6;
+}
+
+/*paginação*/
+
+.paginacao{
+    align-items: center;
+    background-color: aqua;
+}
+
+/*Superior, Header */
+.mainHeader a{
+    color: white;
+    text-decoration:none;
+    margin-left: 10vw;
+    margin-top: 7vh;
+    position: absolute;
+    font-size: 46px;
+    font-weight: 300;
+}
+.box {
+    border:0px solid #444;
+    width: auto;
+}
+
+.box input {
+    display:inline-block;
+    outline:0;
+    border:0;
+    padding: 3vh;
+    width: 60%;
+    margin-left: 10vw;
+    top: 16vh;
+    position: relative;
+    border-radius: 5px;
+}
+.box .button {
+    background: #aaa;
+    color: #fff;
+    font-weight: bold;
+    border:none;
+    padding: 3vh;
+    top: 16vh;
+    position: relative;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+/*busca */
+.busca{
+    display:inline-block;
+}
+.mainNav h2{
+    margin-left: 8%;
+    margin-top:2vh;
+    margin-bottom: 2vh;
+}
+.mainNav h3{
+    margin-left: 75vh;
+}
+
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
+}
